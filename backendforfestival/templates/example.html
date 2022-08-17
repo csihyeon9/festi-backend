@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+      #box{
+         clear: both;
+         padding: 20px;
+         border: 5px solid #c50808;
+     }
+   </style>
+    <body  bgcolor="##50bcdf">
+      <div id="box">  
+      <table border = 1>
+            {% for key, value in result.items() %}
+            
+               <tr>
+                  <th> {{ key }} </th>
+                  <td> {{ value }} </td>
+               </tr>
+               
+            {% endfor %}
+         </table>
+      </div>
+         <div id="box">  
+         <table border="1"><caption><h>검사 기록</h></caption>
+            <p> ...</p>
+            <tr>
+                <th>날짜</th>
+                <th>링크</th>
+                <th>항목</th>
+                <th>결과</th>
+            </tr>
+            <tr>
+                <td>2022 / 08 / 13</td>
+                <td>http://www.example.com</td>
+                <th>XSS</th>
+                <th>위험</th>      
+            </tr>
+
+            <tr>
+                <td>2022 / 08 / 13</td>
+                <td>http://www.example1.com</td>
+                <th>SQL INJECTION</th>
+                <th>위험</th>      
+            </tr>
+
+            <tr>
+                <td>2022 / 08 / 13</td>
+                <td>http://www.example2.com</td>
+                <th>CSRF</th> 
+                <th>위험</th>     
+            </tr>
+
+            <tr>
+                <td>2022 / 08 / 13</td>
+                <td>http://www.example3.com</td>
+                <th>BruteForce</th>   
+                <th>위험</th>   
+            </tr>
+
+            <tr>
+                <td>2022 / 08 / 13</td>
+                <td>http://www.example4.com</td>
+                <th>Cookie</th>   
+                <th>위험</th>   
+            </tr>
+
+        </table>
+      </div>
+      </body>
+
+</html>
+
